@@ -7,6 +7,7 @@ import FeatureCardTwo from '@/components/sections/feature/FeatureCardTwo';
 import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
+import { CheckCircle, Star, Zap, Heart, Share2 } from 'lucide-react';
 
 const assetMap = [
   { "id": "heroImage", "url": "https://images.pexels.com/photos/34297248/pexels-photo-34297248.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", "alt": "biscuits" },
@@ -54,8 +55,8 @@ export default function Home() {
         <div className="mx-auto px-4 md:px-6">
           <SplitAbout
             bulletPoints={[
-              { title: "Expert Support", description: "Our team is here to help you with any need.", icon: "CheckCircle" },
-              { title: "Genuine Products", description: "Certified Apple devices directly from the source.", icon: "Star" }
+              { title: "Expert Support", description: "Our team is here to help you with any need.", icon: CheckCircle },
+              { title: "Genuine Products", description: "Certified Apple devices directly from the source.", icon: Star }
             ]}
             imageSrc={assetMap.find(a => a.id === "aboutImage")?.url}
           />
@@ -65,9 +66,9 @@ export default function Home() {
         <div className="mx-auto px-4 md:px-6">
           <FeatureCardTwo
             features={[
-              { title: "Innovative Technology", description: "Experience the cutting-edge technology of Apple devices.", icon: "Zap" },
-              { title: "Customer First", description: "We prioritize our customers in every decision we make.", icon: "Heart" },
-              { title: "Seamless Integration", description: "Apple products work together flawlessly for a cohesive experience.", icon: "Share2" }
+              { title: "Innovative Technology", description: "Experience the cutting-edge technology of Apple devices.", icon: Zap },
+              { title: "Customer First", description: "We prioritize our customers in every decision we make.", icon: Heart },
+              { title: "Seamless Integration", description: "Apple products work together flawlessly for a cohesive experience.", icon: Share2 }
             ]}
           />
         </div>
